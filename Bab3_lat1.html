@@ -1,0 +1,413 @@
+<html lang="id">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <title>Latihan Bootstrap, Bab 3</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		    <link href="css/style.css" rel="stylesheet"> <!--custome css-->
+
+		    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><!--mndkung elemen baru HTML 5 di IE-->
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <!--for responsive-->
+  </head>
+
+  <style type="text/css">
+    p{
+      font-size: 14px;
+    }
+  </style>
+  <body>
+  
+    <h1>Tipografi, Kode, Tabel, Form</h1>
+
+	 <!-- jQuery first, then Bootstrap JS. -->
+	 <script src="js/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="js/bootstrap.min.js"></script>	 
+
+
+    <div class="container">
+    <h2 class="warna">Penggunaan <small>small</small></h2>
+
+    <!---Lat 3.1.1 Heading and <small>-->
+    <!-- <small> untukk menciptakan secondary text dgn ukuran lbh kecil dan abu2-->
+    <h1>h1. Bootstrap Heading <small>Secondary Text</small></h1>
+    <h2>h2. Bootstrap Heading <small>Secondary Text</small></h2>
+    <h3>h3. Bootstrap Heading <small>Secondary Text</small></h3>
+    <h4>h4. Bootstrap Heading <small>Secondary Text</small></h4>
+    <h5>h5. Bootstrap Heading <small>Secondary Text</small></h5>
+    <h6>h6. Bootstrap Heading <small>Secondary Text</small></h6>
+
+    <h2 class="warna">Body Copy</h2>
+    <!---Lat 3.1.2 Body Copy-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula</p>
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      </div>
+    </div>
+
+    <!---Lat 3.1.3 Lead Body Copy-->
+    <h2 class="warna">Penggunaan class lead</h2>
+
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula</p>
+      <p class="lead">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+      </div>
+    </div>
+
+    <!---Lat 3.1.3 Inline text element-->
+    <h2 class="warna">Inline text element</h2>
+
+    <!--Tag mark untuk highlight-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the mark tag to <mark>Highlight</mark>text</p>
+      </div>
+    </div>
+
+    <!--Tag del untuk menandakan delete teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the del tag to <del>Delete</del> text</p>
+      </div>
+    </div>
+    
+    <!--Tag s untuk menandakan strikethrough-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the s tag to <s>Strikethrough</s> text</p>
+      </div>
+    </div>
+    
+    <!--Tag ins untuk menandakan inserted teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the ins tag to <ins>Inserted</ins> text</p>
+      </div>
+    </div>
+    
+    <!--Tag u untuk menandai underline teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the u tag to <u>Underline</u> text</p>
+      </div>
+    </div>
+
+    <!--Tag u untuk mengecilkan 85% teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the small tag to <small>Small</small> text</p>
+      </div>
+    </div>
+
+    <!--Tag u untuk menebalkan teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the strong tag to <strong>Strong</strong> text</p>
+      </div>
+    </div>
+    
+    <!--Tag u untuk italic teks-->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>You can use the the em tag to <em>Italic</em> text</p>
+      </div>
+    </div>
+
+    <!---Lat 3.1.5 Text Alignment-->
+    <h2 class="warna">Text Alignment</h2>  
+    <p class="text-left">Rata Kiri</p>
+    <p class="text-right">Rata Kanan</p>
+    <p class="text-center">Rata Tengah</p>
+    <p class="text-justify">Justified Text</p>
+    <p class="text-nowrap">No wrap</p>
+
+    <!---Lat 3.1.6 Singkatan-->
+    <h2 class="warna">Singkatan dengan tag abbr </h2>  
+    <!--Tooltips ktk disorot-->
+
+      <abbr title="Real Simple Syndication">RSS</abbr> <br>
+      <abbr title="Hyper Text Markup Language">HTML</abbr>
+     
+  <!---Lat 3.1.9 Blockquote -->
+    <h2 class="warna">Blockquote </h2>  
+      <blockquote>
+      <p>Workhard Payoff<footer>Anonyomous</footer></p>
+      </blockquote>
+
+      <blockquote class="blockquote-reverse">
+      <p>Workhard Payoff<footer>Anonyomous</footer></p>
+      </blockquote>
+    
+
+  <!---Lat 3.1.10 Inline List -->
+    <h2 class="warna">Inline List </h2>  
+    <p>List dibawah ini menggunakan class "<b>list-inline</b>" yg diletakkan didalam tag ul.</p>
+      <ul class="list-inline"> <!--List tampil dlm sebaris-->
+        <li>LoremIpsum</li>
+        <li>LoremIpsum</li>
+        <li>LoremIpsum</li>
+      </ul>
+    
+    <!---Lat 3.10 List -->
+     <h2 class="warna">Description List</h2>
+     <p>Description List dibawah dibuat menggunakan tag dl, tag dt, tag dd</p>
+    <dl>
+      <dt>Abjad 1</dt>
+      <dd>Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat
+      </dd>
+      <dt>Abjad 2<dt>
+      <dd>KKalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat
+      </dd>
+    </dl>
+
+    <!--Membuat dt dlm 1 kolom, dd dalam 1 kolom-->
+   <h2 class="warna">Description List Horizontal</h2>
+   <p>Description List Horizontal menggunakan class="dl-horizontal", di dalam tag dl.</p>
+    <dl class="dl-horizontal"> 
+      <dt>Abjad 1</dt>
+      <dd>Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat
+      </dd>
+      <dt>Abjad 2</dt>
+      <dd>Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat Kalimat
+      </dd>
+    </dl>
+
+    <!---Lat 3.2 Tag penampil code-->
+
+    <!---tag code, untuk menampilkan code tdk lbih dri 1 baris -->
+    <h2 class="warna">Tag code</h2>
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>For example, <code> section </code> should be wrapped inline</p>
+      </div>
+    </div>
+   
+    <!---Pre digunakan untuk mnmpilna code >1 baris dan membuat kotak yg mmliki scroll -->
+    <div class="row">  
+    <pre class="pre-scrollable">  
+    /**
+     * Constructor.
+     */
+    protected function __construct() {
+      parent::__construct();
+
+      $this->setThickness(30);
+
+      $this->defaultLabel = new BCGLabel();
+      $this->defaultLabel->setPosition(BCGLabel::POSITION_BOTTOM);
+      $this->setLabel(self::AUTO_LABEL);
+      $this->setFont(new BCGFontPhp(5));
+
+      $this->text = '';
+      $this->checksumValue = false;
+    }
+    /**
+     * Gets the thickness.
+     *
+     * @return int
+     */
+    public function getThickness() {
+      return $this->thickness;
+    }
+    </pre>
+    </div>
+
+    <!---tag kbd, untuk menampilkan keyboard -->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>Penggunaan tag kbd contoh hasilnya, please hold <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy a text or file</p>
+      </div>
+    </div>
+
+    <!---tag var, untuk menunjukkan variable -->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <p>Penggunan tag var contoh hasilnya, Luas = <var>p x l</var></p>
+      </div>
+    </div>
+
+    <!---tag var, untuk menampilkan sprti output comp program -->
+    <div class="row">
+      <div class="col-md-6 borderkotak">
+      <samp>Teks ini ditulis dgn tag samp. This text is mean to be treated as sample output from a comp program</samp>
+      </div>
+    </div>
+
+
+    <!---Lat 3.3 Table-->
+    <h2 class="warna">Table</h2>
+
+    <table class="table">
+      <caption></caption>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Tag</th>
+          <th>Ket</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><code>table</code></td>
+          <td>Membungkus elemen dalam bentuk tabular</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><code>table</code></td>
+          <td>Membungkus elemen dalam bentuk tabular</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!---Table bordered dan table stripped-->
+    <h2 class="warna">Table Bordered and Stripped</h2>
+    <p>Pada tag table, diberikan class="table table-bordered table-stripped".</p><p> Judul menggunakan tag thead, tiap kolomnya memamai tag th. Contentnya, menggunakan tag tbody, didalamya tag tr dan td.</p>
+    <table class="table table-bordered table-stripped">
+      <caption></caption>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th align="center">Nama</th>
+          <th align="center">Alamat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><code>Fet</code></td>
+          <td>Rembang</td>
+        </tr>
+        <tr class="info"> <!--Efek strype atau warna dlm baris-->
+          <td>2</td>
+          <td><code>Tina</code></td>
+          <td>Rembang</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><code>Fet</code></td>
+          <td>Rembang</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!---3.4 Form-->
+    <h2 class="warna">Form</h2>
+
+    <div class="row">
+    <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+      <form>
+        <div class="form-group"> <!--Form group u efek padding-->
+          <label for="exampleInputEmail1">Email address</label><!--Tag label untuk membuat tebal text-->
+          <input type="email" class="form-control" id="inputEmail1" placeholder="Email"> 
+          <!--Class form-control, membuat text box dgn style dri boootstrap css-->
+          <!--Placeholder untuk watermark di dlm inputan-->          
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="inputPassword1" placeholder="Password">     
+        </div>
+
+        <div class="form-group"> 
+          <label for="exampleInputFile1">File input</label>
+          <input type="file" id="inputFile1"> 
+          <p class="help-block">Example help-block text here</p>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="inputCbox1">
+            <!--input type ditaruh didalam label agar paddingny deket dgn teks. Klo di pisah ama label, jadi g rapi jauh2an-->
+            Check me out
+          </label> 
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+
+    <h2 class="warna">Form Inline</h2>
+    <p>Semua elemen dibungkus tag form dgn class="form-inline". Label dan textbox, dibungkus dlm satu div class = "form-group"</p>
+    <div class="row">
+    <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"><!-- u kotak abu2-->
+     
+      <form class="form-inline"> 
+        <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <!--Tag label untuk membuat tebal text-->
+        <input type="text" class="form-control" id="inputName2" placeholder="Name"> 
+        <!--Class form-control, membuat text box dgn style dri boootstrap css-->  
+        <!--Placeholder untuk watermark di dlm inputan-->        
+        </div>
+
+        <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="inputEmail2" placeholder="Email">      
+        </div>
+      
+        <button type="submit" class="btn btn-default">Send Invitation</button>      
+      </form>
+    </div>
+    </div>
+ 
+
+    <h2 class="warna">Form Horizontal</h2>
+    <p>Semua elemen dibungkus tag form dgn class="form-horizontal". Label dan textbox, dibungkus dlm satu div class = "form-group"</p>
+
+    <div class="row">
+    <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"><!-- u kotak abu2 lgkung-->
+     
+      <form class="form-horizontal"> 
+
+        <div class="form-group"> <!--Class pgturan form-->
+          <label for="exampleInputEmail3" class="col-sm-2 control-label">Email</label>
+          <!--Tag label untuk membuat tebal text. 
+          class col-sm-2 untuk atur lebar ny mnjdi 2 grid. control-label agar rata kanan-->
+          <div class="col-sm-10"> <!--Atur lebar inputan-->
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email"> 
+            <!--Class form-control, membuat text box dgn style dri boootstrap css-->  
+            <!--Placeholder untuk watermark di dlm inputan--> 
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPass3" class="col-sm-2 control-label">Password</label> <!--lbr 2 -->
+          <div class="col-sm-10"> <!--Atur lebar inputan jd 10-->
+            <input type="email" class="form-control" id="inputPass3" placeholder="Password">      
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="inputCbox2">
+                Remember Me
+              </label> 
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">  
+            <button type="submit" class="btn btn-default">Sign in</button>
+          </div>
+        </div>
+
+      </form>
+
+      </div>
+      </div>
+  </div>
+  </body>
+</html>

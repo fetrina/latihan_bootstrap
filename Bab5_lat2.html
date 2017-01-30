@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Split Button Dropdown </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<style media="all">
+		.container{border: solid 0px #000;margin-top:200px;}
+		.row-kosong-20{margin-top:20px;}
+		.row{margin:10px 0 0px 0px;border:solid 0px #000;} 
+		/*.row > *{height:30px;background-color:#ccc;border:solid 1px #00f;margin-top:0px;} */
+		p{padding:0px;}
+		
+	</style>
+  </head>
+  <body>
+    <p>Contoh Button split yg bentuknya sempurna / berhasil</p>
+	<div class="container">
+	
+		<div class="row row-kosong-20" style="border:0px;"></div>
+		
+		<div class="row">
+			<div class="col-sm-12 col-md-7" style="border:0px solid #bbb;border-radius:10px;padding:0px;">
+							
+			
+				<div class="btn-toolbar" style="margin: 0;">
+					 <div class="btn-group">
+						<button class="btn">Default</button>
+						<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Another action</a></li>
+						  <li><a href="#">Something else here</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Separated link</a></li>
+						</ul>
+					  </div><!-- /btn-group -->
+					  <div class="btn-group">
+						<button class="btn btn-primary">Action</button>
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu">
+						  <li><a href="#">Action</a></li>
+						  <li><a href="#">Another action</a></li>
+						  <li><a href="#">Something else here</a></li>
+						  <li class="divider"></li>
+						  <li><a href="#">Separated link</a></li>
+						</ul>
+					  </div><!-- /btn-group -->
+				
+				</div><!-- /btn-toolbar -->		
+					
+					
+			</div>
+		</div>
+		<!--div class="row">
+			<div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:10px 0 5px 10px;background:#fff;">
+				
+				<p><code>&lt;span class="caret"&gt;&lt;&#47;span&gt;</code></p>
+		
+			</div>
+		</div-->
+	</div>
+		
+	
+	
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script-->
+	<script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

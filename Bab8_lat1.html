@@ -1,0 +1,71 @@
+<html lang="id">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Latihan Bootstrap, bab 8</title>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"> <!--custome css-->
+
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><!--mndkung elemen baru HTML 5 di IE-->
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <!--for responsive-->
+
+    <style media="all">
+      .row-kosong-20{margin-top:20px;}
+      .row{margin:10px 0 0px 0px;border:solid 0px #000;}
+      .modal{border:1px solid #aaa;}
+      /* row diatas u mereplace row yg ada dalam bootstrap.css*/  
+    </style>
+  </head>
+  <body>
+  
+    <h1>Javascript Plugin</h1>
+
+	   <!-- jQuery first, then Bootstrap JS. -->
+	   <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	 
+    <script type="text/javascript" charset="utf-8"> 
+      $(document).ready(function(){
+        $('#myModal').modal('show');
+      });
+    </script>
+
+    <!--8.4 Plugin Modal-->
+    <!--8.4.1 Modal Statis-->
+    <h2 class="warna">Modal Statis</h2>
+
+    <p>Modal statis, perlu merefresh page untuk melihatnya.</p>
+    <div class="container">
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Class">
+                  <span aria-hidden="true">&times;</span>
+                  <!--&times ini icon x untuk close-->
+                </button>
+                <h4 class="modal-title">Modal Title</h4>
+              </div>
+
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+              </div>
+
+          </div><!--/.modal-content-->
+        </div><!--/.modal-dialog-->
+      </div><!--/.modal-->
+
+    </div>
+
+  </body>
+</html>

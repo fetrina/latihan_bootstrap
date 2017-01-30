@@ -1,0 +1,633 @@
+<html lang="id">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Latihan Bootstrap, bab 6</title>
+
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"> <!--custome css-->
+
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><!--mndkung elemen baru HTML 5 di IE-->
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <!--for responsive-->
+
+    <style media="all">
+      .row-kosong-20{margin-top:20px;}
+      .row{margin:10px 0 0px 0px;border:solid 0px #000;}
+      /* row diatas u mereplace row yg ada dalam bootstrap.css*/  
+    </style>
+  </head>
+  <body>
+  
+    <h1>Komponen Navigasi</h1>
+
+	   <!-- jQuery first, then Bootstrap JS. -->
+	   <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>	 
+
+    <div class="container">
+
+      <!---6.1 Tab dan Pill-->
+      <!---6.1.1 Tab Dasar-->
+      <h2 class="warna">Navigasi Tab (basic)</h2>
+      <p>Menggunakan class nav nav-tabs dlm tag ul, untuk membuat navigasi bentuk Tab. Sedangkan menu dalam tab, merupakan a href yg dibungkus elemen tag li</p>
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-tabs"><!--Membuat efek tabs-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <!---6.1.2 Pill Dasar-->
+      <h2 class="warna">Navigasi Pill (basic)</h2>
+      <p>Menggnakan class nav nav-pills yg diletakkan dalam ul, untuk membuat navigasi bentuk Pill. Sedangkan menu dalam tab, merupakan a href yg dibungkus elemen tag li</p>
+
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-pills"><!--Membuat efek pills-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div>
+      </div> 
+
+      <!---6.1.2.2 Pill Vertival-->
+      <h2 class="warna">Navigasi Pill Vertical</h2>
+      <p>Class nav nav-pills nav-stacked dalam ul. Class nav-stacked yg membuat Navigasi Pill menjadi Vertical. Sedangkan menu2 dlm tab, merupakan a href yg dibungkus elemen tag li</p>
+
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-pills nav-stacked"><!--Membuat efek pills vertical-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div>
+      </div>  
+
+      <!---6.1.3 Justified Tab and Justified Pill--> 
+      <h2 class="warna">Justified Tab and Justified Pill</h2>
+      <p>Class nav-justified, untuk membuat lebarnya merentang sepanjang layar.</p>
+
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-tabs nav-justified"><!--Membuat efek tabs n justified-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+        <br>
+        <ul class="nav nav-pills nav-justified"><!--Membuat efek pills n justified-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+
+      </div>
+      </div>  
+
+      <!---6.1.4.1 Pill Disabled-->
+      <h2 class="warna">Navigasi Pill Disabled</h2>
+      <p>Menggnakan class disabled didalam tag li, untuk membuat link menjadi disabled.</p>
+
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-pills"><!--Membuat efek pills vertical-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation" class="disabled">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <!---6.1.5 Tab dan Pill Dropdown Menu-->
+      <!---6.1.5.1 Tab dgn Dropdown menu-->
+      <h2 class="warna">Tab Dropdown</h2>
+      <p>Menggnakan class nav dan class nav-tabs, untuk membuat navigasi bentuk Tab. </p>
+      <p>Button dropdown hampir sama seperti cara membuat dropdown biasa. Bedanya adalah disini trigger buttonnya tidak memakai tag button, melainkan a href yang diberi class "dropdown-toggle" dan data-toggle="dropdown"</p>
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-tabs"><!--Membuat efek tabs-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">Dropdown
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action1</a></li>
+              <li><a href="#">Action2</a></li>
+              <li><a href="#">Action3</a></li>
+              <li><a href="#">Action4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <!---6.1.5.2 Pills dgn Dropdown menu-->
+      <h2 class="warna">Pill Dropdown</h2>
+      <p>Menggnakan class nav dan class nav-pils, untuk membuat navigasi bentuk Pill. </p>
+      <p>Button dropdown hampir sama seperti cara membuat dropdown biasa. Bedanya adalah disini trigger buttonnya tidak memakai tag button, melainkan a href yang diberi class "dropdown-toggle" dan data-toggle="dropdown"</p>
+      <div class="row">
+      <div class="col-md-8" style="border:1px solid #bbb;border-radius:10px;padding:20px;"> <!--box abu2-->
+
+        <ul class="nav nav-pills"><!--Membuat efek tabs-->
+          <li role="presentation" class="active">
+            <a href="#">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profiles</a>
+          </li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" aria-haspopup="true" aria-expanded="false">Dropdown
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action1</a></li>
+              <li><a href="#">Action2</a></li>
+              <li><a href="#">Action3</a></li>
+              <li><a href="#">Action4</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+
+<!--PENYEBAB ERROR TOGGLE FORM mulai dri sini-->
+      <!---6.2 Navigation Bar-->
+      <!---6.2.1 Navbar Dasar -->
+      <h2 class="warna">Navigation Bar (basic)</h2>
+      <p>Navigation bar dihasilkan dgn class="navbar" pd tag nav. Setelah tag nav (pembuka), diberikan div class="container-fluid", agar lebar memenuhi seluruh layar. 
+      <p>Didalam container, kt buat div class="navbar-header" yg membungkus elemen button, juga a href.</p>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!--Class container-fluid, agar lebar komponenn navbar memenuhi komponen layar.-->
+
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <!--komponen header d isi dgn button toggle, dgn membuat button dri tag button dgn class dan data-toggle spti dbwh ini.-->
+              <!--Button dgn tiga buah icon garis yg bersifat togleable (bs ditampakkan n dihilangkan dgn mgkliknya yg hnya nampak pada layar <768px.-->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                 <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.--> 
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u memunculkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          </div>
+        </div>
+      </nav>
+
+      <!---6.2.2 Elemen dalam Navbar-->
+      <!---6.2.2.1 Navbar Brand-->
+      <h2 class="warna">NavBar Brand</h2>
+
+      <p>Brand merupakan sebuah link dasar yg memperlihatkan <b>merk</b> atau <b>nama proyek</b> atau <b>logo perusahaan</b>.</p>
+      <p>Tag nav class="navbar navbar-default", untuk membuat navigation bar. </p>
+      <p>div class="navbar-header", untuk membungkus tag a href yg memakai class="navbar-brand".</p>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">Lokomedia
+              </a>
+          </div>
+        </div>
+      </nav>
+
+      <!--INI JG PENYEBAB TOGGLE nya gagal ke expand-->
+      <!---6.2.2.2 Navbar Toggle Button-->
+      <h2 class="warna">NavBar Toggle Button</h2>
+
+      <p>Komponen header berisi tiga buah icon garis yg bersifat togleable (bs ditampakkan n dihilangkan dgn mengkliknya) yg hanya nampak pada layar < 768px.</p>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Class container-fluid, agar lebar komponenn navbar memenuhi komponen layar.-->
+
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <!--komponen header di isi dgn button toggle, dgn membuat button dri tag button dgn class dan data-toggle spti dbwh ini.-->
+              <!--button tiga buah icon garis yg bersifat togleable (bs ditampakkan n dihilangkan dgn mgkliknya yg hnya nampak pada layar <768px. -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Brand</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+            <!--Bila tidak diisi, toggle ketika diklik tidak akan expand-->
+          </div>
+        </div>
+      </nav>
+      
+      <!---6.2.2.3 Navbar Toggle Button-->
+      <h2 class="warna">NavBar Form</h2>
+
+      <p>Elemen form dalam NavBar. Caranya buat tag form dengan class="navbar-form". Lalu buat input type="text", serta button.</p>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Class container-fluid, agar lebar komponenn navbar memenuhi komponen layar.-->
+
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+             <!--komponen header di isi dgn button toggle, dgn membuat button dri tag button yg class dan data-togglenya spti dbwh ini.-->
+              <!--button tiga buah icon garis yg bersifat togleable (bs ditampakkan n dihilangkan dgn mgkliknya yg hnya nampak pada layar <768px. -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Lokomedia</a>
+          </div>
+
+          <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          <!--div dbwh ini menggunakan nama class dan id sesuai button toggle yg dibuat diatas. Agar ketika button ditekan dapat melakukan expand elemen dibawah ini.-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="button" class="btn btn-default">Submit</button>
+              </form>
+
+              <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="button" class="btn btn-default">Submit</button>
+              </form>
+          </div>   
+        </div>
+      </nav>
+
+
+      <!---6.2.2.4 Navbar Button-->
+      <h2 class="warna">NavBar Button</h2>
+
+      <p>Elemen button dalam NavBar. Melalu tag div class="navbar-header", lalu buat elemen button di dalamnya.</p>
+        
+       <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#">Lokomedia
+              </a>
+              <button type="button" class="btn btn-default navbar-btn">Sign In</button> 
+          </div>
+        </div>
+      </nav>
+   
+      <!---6.2.2.5 Navbar Link-->
+      <h2 class="warna">NavBar Link</h2>
+
+      <p>Link pada navbar akan masuk ke dlm toggle button, bila layar < 768px. </p>
+        
+       <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4" aria-expanded="false">
+              <!--value didalam data-target tidak boleh ada yg sama persis dalam 1 html, krn akan menybabkan tidak berfungsi. Jadi bl ada pgunaan button toggle pastikan slalu brbeda. -->
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Lokomedia</a>
+          </div>
+
+          <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          <!--div dbwh ini menggunakan nama class dan id sesuai button toggle yg dibuat diatas. Agar ketika button ditekan dapat melakukan expand elemen dibawah ini.-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+
+      <!---6.2.2.6 Navbar Teks-->
+      <h2 class="warna">NavBar Teks</h2>
+
+      <p>Teks pada navbar akan masuk ke dlm toggle button, bila layar < 768px. </p>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5" aria-expanded="false">
+              <!--value didalam data-target tidak boleh ada yg sama persis dalam 1 html, krn akan menybabkan tidak berfungsi. Jadi bl ada pgunaan button toggle pastikan slalu brbeda. -->
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Lokomedia</a>
+          </div>
+
+          <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          <!--div dbwh ini menggunakan nama class dan id sesuai button toggle yg dibuat diatas. Agar ketika button ditekan dapat melakukan expand elemen dibawah ini.-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
+            <p class="navbar-text">Ini contoh nav text</p>
+          </div> 
+        </div>
+      </nav>
+
+      <!---6.2.2.7 Navbar Non Nav Link-->
+      <h2 class="warna">NavBar Non Nav Link</h2>
+
+      <p>Link pada navbar akan masuk ke dlm toggle button, bila layar < 768px. Disini nama tampak kluar dri nav, wajar krn ini kt taruh dlm container, klo dicoba diluar container, posisinya akan rapih tidak mepet pinggir.</p>
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+              <!--value didalam data-target tidak boleh ada yg sama persis dalam 1 html, krn akan menybabkan tidak berfungsi. Jadi bl ada pgunaan button toggle pastikan slalu brbeda. -->
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Lokomedia</a>
+          </div>
+
+          <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          <!--div dbwh ini menggunakan nama class dan id sesuai button toggle yg dibuat diatas. Agar ketika button ditekan dapat melakukan expand elemen dibawah ini.-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <p class="navbar-text navbar-right">Signed In as<a href="#" class="navbar-link">FKD</a><!--class navbar-link, krn kt ingin link trsbt tdk mnjdi komponen navbar-->
+            </p>
+          </div> 
+        </div>
+      </nav>
+
+      <!---6.2.3.1 Navbar Align Component-->
+      <h2 class="warna">NavBar Align Component</h2>
+
+      <p>Class navbar-left atau navbar-right, untuk menempatkan komponen di kiri atau kanan navbar. </p>
+        
+      <nav class="navbar navbar-default">
+        <div class="container">
+        <!--Brand & Toggle get grouped for better mobile display-->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7" aria-expanded="false">
+              <!--value didalam data-target tidak boleh ada yg sama persis dalam 1 html, krn akan menybabkan tidak berfungsi. Jadi bl ada pgunaan button toggle pastikan slalu brbeda. -->
+                <!--class sr-only hanya untuk kepentingan screen reader, tdk dtmpilkan dilayar.-->     
+                <span class="sr-only">Toggle navigation</span>
+                <!--Dibawah ini u menampilkan icon garis pd toggle-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Lokomedia</a>
+          </div>
+
+          <!--komponen navbar lainnya (link, tombol, teks, dsb)-->
+          <!--div dbwh ini menggunakan nama class dan id sesuai button toggle yg dibuat diatas. Agar ketika button ditekan dapat melakukan expand elemen dibawah ini.-->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div> 
+        </div>
+      </nav>
+
+      <!---6.3 Breadcrumbs-->
+      <h2 class="warna">Breadcrumb</h2>
+
+      <p>Ordered List dengan class="breadcumb", untuk membuat hirarki navigasi. </p>
+
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">Data</a></li>
+      </ol>
+
+      <!---6.4 Pagination-->
+      <!---6.4.1 Pagination Standar-->
+      <h2 class="warna">Pagination Standar</h2>
+      
+      <p>Pagination menggunakan ul class="navigation", tag li dan a href untuk membungkus setiap angkanya.</p>
+ 
+        <ul class="pagination">
+          <li>
+            <a href="#">&laquo;</a>
+            <!--&laquo; ada huruf l untuk left nav.-->
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#">&raquo;</a>
+            <!--&raquo; ada huruf r untuk left nav.-->
+          </li>
+        </ul>
+      
+
+      <!---6.4.2.1 Disabled Active Pagination-->
+      <h2 class="warna">Disabled Active Pagination</h2>
+
+      <p>Disabled pagination dengan class="disabled" pada tag li. Active Pagination dengan class="active" pada tag li.</p>
+
+        <ul class="pagination">
+          <li class="disabled">
+            <a href="#">&laquo;</a>
+            <!--&laquo; ada huruf l untuk left nav.-->
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#">&raquo;</a>
+            <!--&raquo; ada huruf r untuk left nav.-->
+          </li>
+        </ul>
+
+      <!---6.4.2.2 Ukuran Paging Standar-->
+      <h2 class="warna">Ukuran Pagination</h2>
+
+      <p>ul class="pagination pagination-large", untuk membuat large pagination.</p>
+
+      <div class="row">
+      <div class="col-md-7" style="border:1px solid #aaa;border-radius:10px;margin-top:40px;">
+          
+        <nav>
+        <ul class="pagination pagination-lg">
+          <li>
+            <a href="#">&laquo;</a>
+            <!--&laquo; ada huruf l untuk left nav.-->
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#">&raquo;</a>
+            <!--&laquo; ada huruf r untuk left nav.-->
+          </li>
+        </ul>
+        </nav>
+
+        <nav><!--kasih nav agar bisa ada jarak spasi enter, antar pagination-->
+        <ul class="pagination pagination-sm">
+          <li>
+             <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            <!--&laquo; ada huruf l untuk left nav.-->
+            <!-- the aria-label attribute is used to provide the label to any assistive technologies-->
+            <!--aria-hidden Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author.-->
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+            <!--&laquo; ada huruf r untuk left nav.-->
+          </li>
+        </ul>
+        </nav>
+      </div>
+      </div>  
+
+      <!---6.5.1.1 Pager Standar-->
+      <h2 class="warna">Pager Standar</h2>
+
+      <p>Tag ul dengan class="pager", untuk membuat dua buah link pagination. Posisi by default di tengah</p>
+
+      <nav>
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </nav>
+
+      <!---6.5.2.1 Posisi Pager-->
+      <h2 class="warna">Posisi Pager</h2>
+
+      <p>Tag ul dengan class="pager", untuk membuat dua buah link pagination. Dua buah link kita buat dlm tag li dan a href.</p> 
+      <p>Posisi diubah rapat ke kiri dengan class="previous" pada tag li. Untuk rapat ke kanan, berikan class="next". </p>
+
+      <nav>
+        <ul class="pager">
+          <li class="previous"><a href="#">Previous</a>
+          </li>
+          <li class="next"><a href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+       <!---6.5.2.1 Disabled Pager-->
+      <h2 class="warna">Pager Disabled Element</h2>
+
+      <p>Tag ul dengan class="pager", untuk membuat dua buah link pagination. Dua buah link kita buat dlm tag li dan a href. </p> 
+      <p>class="previous disabled" pada tag li, agar pager menjadi tidak aktif.</p>
+
+      <nav>
+        <ul class="pager">
+          <li class="previous disabled">
+            <a href="#">Older</a>
+          </li>
+          <li class="next">
+            <a href="#">Newer</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </body>
+</html>

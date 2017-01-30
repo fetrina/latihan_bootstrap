@@ -1,0 +1,12 @@
+/*CSS Custome buatan Fetrina*/
+
+.warna{
+	background-color: yellow;
+}
+.borderkotak{
+      padding-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 0px; 
+      border: solid 1px #bbb;
+      border-radius: 10px;
+    }
